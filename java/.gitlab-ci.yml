@@ -1,0 +1,9 @@
+image: maven:3.5.4-ibmjava-8-alpine
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - mvn clean test
